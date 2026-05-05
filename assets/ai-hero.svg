@@ -1,0 +1,168 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hey, I am Chamod - modern animated AI and machine learning profile hero">
+  <defs>
+    <style>
+      .float-a { animation: floatA 6s ease-in-out infinite; }
+      .float-b { animation: floatB 7.5s ease-in-out infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+      .blink { animation: blink 1s steps(2, end) infinite; }
+      .fade { animation: fade 3.2s ease-in-out infinite; }
+      .dash { stroke-dasharray: 14 16; animation: dash 9s linear infinite; }
+      .dash-fast { stroke-dasharray: 6 12; animation: dash 5s linear infinite; }
+      .orbit { animation: orbit 18s linear infinite; transform-origin: 945px 194px; }
+      .orbit-rev { animation: orbitRev 11s linear infinite; transform-origin: 945px 194px; }
+      .scan { animation: scan 6s ease-in-out infinite; }
+      .stream-a { animation: streamA 4.8s linear infinite; }
+      .stream-b { animation: streamB 6.1s linear infinite; }
+      .stream-c { animation: streamC 5.4s linear infinite; }
+      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(16px); } }
+      @keyframes pulse { 0%,100% { opacity: .58; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+      @keyframes blink { 0%,45% { opacity: 1; } 46%,100% { opacity: 0; } }
+      @keyframes fade { 0%,100% { opacity: .38; } 50% { opacity: .95; } }
+      @keyframes dash { to { stroke-dashoffset: -220; } }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes orbitRev { to { transform: rotate(-360deg); } }
+      @keyframes scan { 0% { transform: translateY(-120px); opacity: 0; } 18% { opacity: .62; } 100% { transform: translateY(460px); opacity: 0; } }
+      @keyframes streamA { from { transform: translateX(-320px); } to { transform: translateX(1240px); } }
+      @keyframes streamB { from { transform: translateX(-520px); } to { transform: translateX(1240px); } }
+      @keyframes streamC { from { transform: translateX(-220px); } to { transform: translateX(1240px); } }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="0.36" stop-color="#07111F" />
+      <stop offset="0.72" stop-color="#081427" />
+      <stop offset="1" stop-color="#042421" />
+    </linearGradient>
+    <linearGradient id="neon" x1="78" y1="42" x2="1130" y2="358" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00F5D4" />
+      <stop offset="0.48" stop-color="#8B5CF6" />
+      <stop offset="1" stop-color="#FF2E88" />
+    </linearGradient>
+    <linearGradient id="glass" x1="72" y1="74" x2="724" y2="316" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".17" />
+      <stop offset=".58" stop-color="#7DD3FC" stop-opacity=".06" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".035" />
+    </linearGradient>
+    <linearGradient id="scanFill" x1="0" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00F5D4" stop-opacity="0" />
+      <stop offset=".5" stop-color="#00F5D4" stop-opacity=".34" />
+      <stop offset="1" stop-color="#00F5D4" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset=".42" stop-color="#00F5D4" />
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity=".15" />
+    </radialGradient>
+    <filter id="glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="titleGlow" x="-20%" y="-45%" width="140%" height="190%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#22304A" stroke-width="1" opacity=".45" />
+      <circle cx="0" cy="0" r="1.25" fill="#00F5D4" opacity=".26" />
+    </pattern>
+    <clipPath id="round">
+      <rect width="1200" height="400" rx="32" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="400" fill="url(#bg)" />
+    <rect width="1200" height="400" fill="url(#grid)" opacity=".68" />
+
+    <path class="float-a" d="M-80 84C92 18 218 132 386 86C555 40 654 -12 820 48C975 104 1058 150 1280 78" stroke="url(#neon)" stroke-width="92" stroke-linecap="round" opacity=".14" filter="url(#glow)" />
+    <path class="float-b" d="M-90 326C120 250 270 356 450 310C625 265 732 236 900 278C1048 316 1118 352 1280 284" stroke="url(#neon)" stroke-width="74" stroke-linecap="round" opacity=".13" filter="url(#glow)" />
+
+    <g opacity=".72">
+      <rect class="stream-a" x="-320" y="54" width="260" height="2.5" rx="1.2" fill="#00F5D4" />
+      <rect class="stream-b" x="-520" y="198" width="380" height="2.5" rx="1.2" fill="#8B5CF6" />
+      <rect class="stream-c" x="-220" y="326" width="180" height="2.5" rx="1.2" fill="#FF2E88" />
+    </g>
+
+    <g font-family="Consolas, Monaco, monospace" font-size="13" opacity=".42">
+      <text class="float-a" x="748" y="78" fill="#7DD3FC">x_train.shape</text>
+      <text class="float-b" x="1046" y="122" fill="#FDA4AF">loss--</text>
+      <text class="fade" x="696" y="344" fill="#C4B5FD">accuracy++</text>
+      <text class="float-a" x="70" y="350" fill="#67E8F9">data -&gt; model -&gt; product</text>
+    </g>
+
+    <g transform="translate(70 70)">
+      <rect x="0" y="0" width="662" height="258" rx="30" fill="url(#glass)" stroke="url(#neon)" stroke-width="1.7" />
+      <rect x="18" y="18" width="626" height="222" rx="22" fill="#020617" opacity=".44" />
+      <path d="M36 49H206" stroke="url(#neon)" stroke-width="9" stroke-linecap="round" opacity=".82" class="dash-fast" />
+      <circle class="pulse" cx="234" cy="49" r="5" fill="#FF2E88" />
+      <circle class="pulse" cx="252" cy="49" r="5" fill="#00F5D4" />
+
+      <text x="36" y="112" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="900" filter="url(#titleGlow)">Hey, I'm Chamod</text>
+      <text x="39" y="151" fill="#00F5D4" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="750">AI Undergraduate Student</text>
+      <text x="39" y="184" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="18">Machine Learning | Data Science | Intelligent Systems</text>
+
+      <g font-family="Consolas, Monaco, monospace" font-size="14">
+        <rect x="39" y="204" width="156" height="30" rx="15" fill="#00F5D4" opacity=".12" stroke="#00F5D4" stroke-opacity=".5" />
+        <text x="56" y="224" fill="#7DD3FC">model.fit()</text>
+        <rect x="209" y="204" width="162" height="30" rx="15" fill="#8B5CF6" opacity=".12" stroke="#8B5CF6" stroke-opacity=".5" />
+        <text x="226" y="224" fill="#C4B5FD">learn patterns</text>
+        <rect x="385" y="204" width="178" height="30" rx="15" fill="#FF2E88" opacity=".12" stroke="#FF2E88" stroke-opacity=".5" />
+        <text x="402" y="224" fill="#FDA4AF">ship AI ideas</text>
+        <rect class="blink" x="574" y="209" width="9" height="19" rx="2" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <g filter="url(#glow)">
+      <g class="orbit">
+        <circle cx="945" cy="78" r="5" fill="#00F5D4" />
+        <circle cx="945" cy="310" r="4.5" fill="#FF2E88" />
+      </g>
+      <g class="orbit-rev">
+        <circle cx="826" cy="194" r="4.5" fill="#C4B5FD" />
+        <circle cx="1064" cy="194" r="4.5" fill="#7DD3FC" />
+      </g>
+
+      <circle cx="945" cy="194" r="122" stroke="url(#neon)" stroke-width="2.4" opacity=".86" class="dash" />
+      <circle cx="945" cy="194" r="86" stroke="#00F5D4" stroke-width="2" opacity=".72" class="dash-fast" />
+      <circle cx="945" cy="194" r="46" stroke="#FF2E88" stroke-width="1.8" opacity=".74" class="dash-fast" />
+
+      <path d="M866 136L945 96L1025 137V238L945 283L865 238V136Z" stroke="#7DD3FC" stroke-width="2" opacity=".75" />
+      <path d="M866 136L1025 238M1025 137L865 238M945 96V283M866 136L945 194L1025 137M865 238L945 194L1025 238" stroke="#64748B" stroke-width="1.25" opacity=".72" />
+      <g class="pulse">
+        <circle cx="945" cy="96" r="6.5" fill="#00F5D4" />
+        <circle cx="1025" cy="137" r="6.5" fill="#8B5CF6" />
+        <circle cx="1025" cy="238" r="6.5" fill="#FF2E88" />
+        <circle cx="945" cy="283" r="6.5" fill="#00F5D4" />
+        <circle cx="865" cy="238" r="6.5" fill="#8B5CF6" />
+        <circle cx="866" cy="136" r="6.5" fill="#FF2E88" />
+        <circle cx="945" cy="194" r="13" fill="url(#core)" />
+      </g>
+
+      <g font-family="Consolas, Monaco, monospace" font-size="13">
+        <rect x="766" y="46" width="122" height="34" rx="17" fill="#020617" opacity=".82" stroke="#00F5D4" stroke-opacity=".45" />
+        <text x="786" y="68" fill="#7DD3FC">AI / ML</text>
+        <rect x="1005" y="294" width="138" height="34" rx="17" fill="#020617" opacity=".82" stroke="#FF2E88" stroke-opacity=".45" />
+        <text x="1025" y="316" fill="#FDA4AF">optimizer</text>
+        <rect x="760" y="300" width="150" height="34" rx="17" fill="#020617" opacity=".82" stroke="#8B5CF6" stroke-opacity=".45" />
+        <text x="779" y="322" fill="#C4B5FD">neural net</text>
+      </g>
+    </g>
+
+    <g opacity=".85">
+      <circle class="float-a" cx="154" cy="54" r="3.2" fill="#00F5D4" />
+      <circle class="float-b" cx="344" cy="330" r="3" fill="#FF2E88" />
+      <circle class="float-a" cx="650" cy="42" r="2.8" fill="#8B5CF6" />
+      <circle class="float-b" cx="1122" cy="84" r="3" fill="#00F5D4" />
+      <circle class="float-a" cx="1090" cy="344" r="2.8" fill="#7DD3FC" />
+    </g>
+
+    <rect class="scan" x="0" y="0" width="1200" height="92" fill="url(#scanFill)" />
+    <path d="M0 352C152 320 260 358 404 336C552 314 660 276 818 302C974 328 1040 360 1200 324V400H0V352Z" fill="url(#neon)" opacity=".18" />
+  </g>
+</svg>

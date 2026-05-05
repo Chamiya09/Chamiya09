@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:00f5d4,50:9b5de5,100:f72585&text=Hey,%20I'm%20Chamod&fontColor=ffffff&fontSize=42&fontAlignY=35&desc=AI%20Undergraduate%20Student%20%7C%20Future%20AI%20Engineer&descAlignY=55&descSize=16" width="100%" />
+<img src="./assets/ai-hero.svg" alt="Hey, I'm Chamod - AI undergraduate student" width="100%" />
 
 <a href="https://github.com/Chamiya09"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://linkedin.com/in/Chamiya09"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
