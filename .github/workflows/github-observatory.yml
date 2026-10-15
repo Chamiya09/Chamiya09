@@ -1,0 +1,53 @@
+name: GitHub Observatory
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-observatory
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify generator behavior
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh the public GitHub snapshot
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/generate_observatory.py
+
+      - name: Commit changed README statistics
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          git add -- README.md
+          if git diff --cached --quiet; then
+            echo "Snapshot unchanged; no commit needed."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "chore: refresh GitHub Observatory"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
