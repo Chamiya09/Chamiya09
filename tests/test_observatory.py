@@ -36,6 +36,15 @@ class FakeGitHub(obs.GitHub):
 
 
 class ObservatoryTests(unittest.TestCase):
+    def test_repository_readme_is_ready_for_markdown_updates(self):
+        readme = (obs.ROOT / 'README.md').read_text(encoding='utf-8')
+        self.assertEqual(readme.count(obs.START), 1)
+        self.assertEqual(readme.count(obs.END), 1)
+        self.assertLess(readme.index(obs.START), readme.index(obs.END))
+        for name in ('github-observatory.svg', 'github-observatory-mobile.svg'):
+            self.assertIn(name, readme)
+            self.assertTrue((obs.ROOT / 'assets' / name).is_file())
+
     def test_pagination_real_totals_and_fork_exclusion(self):
         client = FakeGitHub()
         data = obs.collect(client, 'example', NOW)

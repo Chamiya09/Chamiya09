@@ -17,6 +17,10 @@ import subprocess
 import sys
 import tempfile
 import time
+if __package__:
+    from .observatory_design import render_cards
+else:
+    from observatory_design import render_cards
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlparse
 from urllib.request import Request, urlopen
@@ -187,6 +191,12 @@ def markdown_escape(value):
     return value.replace("|", "&#124;")
 
 
+def snapshot_languages(snapshot):
+    # A restored display-only snapshot retains its verified rounded percentages.
+    # Fresh API collections always use the full language-byte measurements.
+    return snapshot.get('display_languages') or language_segments(snapshot.get('language_bytes', {}))
+
+
 def render(snapshot):
     metrics = snapshot['metrics']
     username = markdown_escape(snapshot['username'])
@@ -194,17 +204,17 @@ def render(snapshot):
     lines = [
         '## \u2726 GitHub Observatory', '',
         '**\u2726 LIVE DEVELOPER ACTIVITY \u2726**', '',
-        f'Public GitHub snapshot for **@{username}** ? refreshed every 6 hours.', '',
+        f'Public GitHub snapshot for **@{username}** — refreshed every 6 hours.', '',
         '### GitHub Statistics', '',
         '| Metric | Total | Scope |',
         '| :--- | ---: | :--- |',
-        f"| Commits ? {snapshot['year']} | **{metrics['commits']:,}** | Public default branches, current UTC year |",
-        f"| Pull requests | **{metrics['pull_requests']:,}** | Authored public PRs ? all time, all states |",
+        f"| Commits · {snapshot['year']} | **{metrics['commits']:,}** | Public default branches, current UTC year |",
+        f"| Pull requests | **{metrics['pull_requests']:,}** | Authored public PRs · all time, all states |",
         f"| Stars received | **{metrics['stars']:,}** | Owned public repositories |",
         f"| Public repositories | **{metrics['public_repositories']:,}** | Owned repositories, including forks |",
         '', '### Language Explorer', '',
     ]
-    segments = language_segments(snapshot['language_bytes'])
+    segments = snapshot_languages(snapshot)
     if segments:
         lines += ['| Language | Share | Distribution |', '| :--- | ---: | :--- |']
         for name, percent in segments:
@@ -221,7 +231,8 @@ def render(snapshot):
     metadata = json.dumps(snapshot, sort_keys=True, ensure_ascii=True)
     metadata = metadata.replace('<', r'\u003c').replace('>', r'\u003e').replace('-', r'\u002d')
     lines.append('<!-- observatory-data: ' + metadata + ' -->')
-    return '\n'.join(lines)
+    picture = '<picture>\n  <source media="(max-width: 600px)" srcset="assets/github-observatory-mobile.svg" />\n  <img src="assets/github-observatory.svg" alt="GitHub Observatory statistics and language distribution" width="100%" />\n</picture>'
+    return picture + '\n\n<details>\n<summary>View statistics as text</summary>\n\n' + '\n'.join(lines) + '\n\n</details>'
 
 
 def publish(snapshot, readme, now):
@@ -246,8 +257,24 @@ def publish(snapshot, readme, now):
     newline = '\r\n' if '\r\n' in original else '\n'
     section = render(snapshot).replace('\n', newline)
     content = original[:start] + newline + newline + section + newline + newline + original[end:]
+    assets = readme.parent / 'assets'
+    images = [(assets / 'github-observatory.svg', render_cards(snapshot, snapshot_languages(snapshot))),
+              (assets / 'github-observatory-mobile.svg', render_cards(snapshot, snapshot_languages(snapshot), mobile=True))]
+    assets.mkdir(parents=True, exist_ok=True)
+    images_changed = False
+    for path, image in images:
+        if path.exists() and path.read_text(encoding='utf-8') == image:
+            continue
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', newline='', dir=assets, suffix='.tmp', delete=False) as handle:
+            temporary = Path(handle.name)
+            handle.write(image)
+        try:
+            os.replace(temporary, path)
+        finally:
+            temporary.unlink(missing_ok=True)
+        images_changed = True
     if content == original:
-        return False
+        return images_changed
     # Only the marked block changes; a failed fetch never reaches this atomic write.
     with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', newline='', dir=readme.parent,
                                      suffix='.tmp', delete=False) as handle:

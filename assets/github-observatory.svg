@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">GitHub Observatory</title>
+<desc id="desc">Public GitHub statistics and language byte distribution. Full data and counting scope are available in the README.</desc>
+<defs><linearGradient id="card" x2="1" y2="1"><stop stop-color="#1A173B"/><stop offset="1" stop-color="#14162F"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#B794F4" stop-opacity=".15"/><stop offset="1" stop-color="#B794F4" stop-opacity="0"/></radialGradient>
+<style>text{font-family:Segoe UI,Arial,sans-serif}</style></defs>
+<rect width="1200" height="430" rx="20" fill="#030B22"/>
+<ellipse cx="600.0" cy="45" rx="290" ry="100" fill="url(#glow)"/>
+<text x="600.0" y="31" font-size="13" fill="#B794F4" font-weight="400" text-anchor="middle">✦ LIVE DEVELOPER ACTIVITY ✦</text>
+<text x="600.0" y="66" font-size="30" fill="#F8FAFC" font-weight="650" text-anchor="middle">GitHub Observatory</text>
+<text x="600.0" y="94" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="middle">@Chamiya09 / PUBLIC GITHUB SNAPSHOT</text>
+<rect x="24" y="116" width="552" height="264" rx="16" fill="url(#card)" stroke="#2A2358"/>
+<path d="M48 117h64" stroke="#B794F4" stroke-opacity=".6"/>
+<text x="48" y="152" font-size="21" fill="#F8FAFC" font-weight="600" text-anchor="start">GitHub Statistics</text>
+<rect x="624" y="116" width="552" height="264" rx="16" fill="url(#card)" stroke="#2A2358"/>
+<path d="M648 117h64" stroke="#B794F4" stroke-opacity=".6"/>
+<text x="648" y="152" font-size="21" fill="#F8FAFC" font-weight="600" text-anchor="start">Language Explorer</text>
+<text x="48" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Commits / 2026</text>
+<text x="48" y="230" font-size="34" fill="#B794F4" font-weight="650" text-anchor="start">1,205</text>
+<text x="48" y="251" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Public default branches</text>
+<text x="306" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Pull requests</text>
+<text x="306" y="230" font-size="34" fill="#60A5FA" font-weight="650" text-anchor="start">177</text>
+<text x="306" y="251" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Authored / all time, all states</text>
+<text x="48" y="287" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Stars received</text>
+<text x="48" y="324" font-size="34" fill="#EC6CB9" font-weight="650" text-anchor="start">7</text>
+<text x="48" y="345" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Owned public repositories</text>
+<text x="306" y="287" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Public repos</text>
+<text x="306" y="324" font-size="34" fill="#82D8CF" font-weight="650" text-anchor="start">30</text>
+<text x="306" y="345" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Owned / includes forks</text>
+<path d="M300 178v176" stroke="#2A2358"/>
+<clipPath id="bar"><rect x="648" y="184" width="504" height="16" rx="8"/></clipPath>
+<rect x="648" y="184" width="504" height="16" rx="8" fill="#292542"/>
+<rect x="648.00000" y="184" width="324.25175" height="16" fill="#B794F4" clip-path="url(#bar)"/>
+<circle cx="652" cy="225" r="4" fill="#B794F4"/>
+<text x="664" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">TypeScript</text>
+<text x="883" y="230" font-size="15" fill="#B794F4" font-weight="600" text-anchor="end">64.4%</text>
+<rect x="972.25175" y="184" width="54.37762" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
+<circle cx="910" cy="225" r="4" fill="#60A5FA"/>
+<text x="922" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">C#</text>
+<text x="1141" y="230" font-size="15" fill="#60A5FA" font-weight="600" text-anchor="end">10.8%</text>
+<rect x="1026.62937" y="184" width="49.34266" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
+<circle cx="652" cy="259" r="4" fill="#EC6CB9"/>
+<text x="664" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">CSS</text>
+<text x="883" y="264" font-size="15" fill="#EC6CB9" font-weight="600" text-anchor="end">9.8%</text>
+<rect x="1075.97203" y="184" width="32.22378" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
+<circle cx="910" cy="259" r="4" fill="#82D8CF"/>
+<text x="922" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Java</text>
+<text x="1141" y="264" font-size="15" fill="#82D8CF" font-weight="600" text-anchor="end">6.4%</text>
+<rect x="1108.19580" y="184" width="23.16084" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
+<circle cx="652" cy="293" r="4" fill="#E8C58F"/>
+<text x="664" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Python</text>
+<text x="883" y="298" font-size="15" fill="#E8C58F" font-weight="600" text-anchor="end">4.6%</text>
+<rect x="1131.35664" y="184" width="20.64336" height="16" fill="#9399BD" clip-path="url(#bar)"/>
+<circle cx="910" cy="293" r="4" fill="#9399BD"/>
+<text x="922" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Other languages</text>
+<text x="1141" y="298" font-size="15" fill="#9399BD" font-weight="600" text-anchor="end">4.1%</text>
+<text x="648" y="336" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Forks excluded / owned public repositories</text>
+<text x="648" y="360" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Share of code bytes, not time or expertise.</text>
+<text x="26" y="411" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Refresh every 6h / GitHub API</text>
+<text x="1174" y="411" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="end">Last snapshot: 2026-10-15 20:09:52 UTC</text>
+</svg>
