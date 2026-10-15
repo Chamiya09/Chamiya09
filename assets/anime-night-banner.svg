@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">Hi, I'm Chamod Ekanayaka</title>
+  <desc id="description">A peaceful moonlit rooftop, a developer with a glowing laptop, and a lavender city beneath drifting clouds. Software Engineer; Full Stack Developer; AI and Machine Learning Enthusiast; Passionate Coder; Turning Ideas into Reality.</desc>
+  <defs>
+    <linearGradient id="sky" x2="1" y2="1">
+      <stop stop-color="#080F21"/><stop offset=".45" stop-color="#171C44"/><stop offset=".78" stop-color="#35265F"/><stop offset="1" stop-color="#61456E"/>
+    </linearGradient>
+    <radialGradient id="atmosphere"><stop stop-color="#A78BFA" stop-opacity=".25"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="halo"><stop stop-color="#DDE7FF" stop-opacity=".24"/><stop offset=".45" stop-color="#A7BFFF" stop-opacity=".1"/><stop offset="1" stop-color="#60A5FA" stop-opacity="0"/></radialGradient>
+    <linearGradient id="moon" x2=".7" y2="1"><stop stop-color="#F8FAFC"/><stop offset="1" stop-color="#B6C7F0"/></linearGradient>
+    <linearGradient id="cloud" x2="0" y2="1"><stop stop-color="#A7A1DC" stop-opacity=".2"/><stop offset="1" stop-color="#8F88CF" stop-opacity=".02"/></linearGradient>
+    <linearGradient id="shade"><stop stop-color="#0B1020" stop-opacity=".75"/><stop offset="1" stop-color="#0B1020" stop-opacity="0"/></linearGradient>
+    <linearGradient id="trail"><stop stop-color="#DDE7FF" stop-opacity="0"/><stop offset="1" stop-color="#DDE7FF"/></linearGradient>
+    <radialGradient id="screenGlow"><stop stop-color="#60A5FA" stop-opacity=".28"/><stop offset="1" stop-color="#60A5FA" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2"/></filter>
+    <linearGradient id="nebula" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#60A5FA" stop-opacity="0"/><stop offset=".45" stop-color="#9FA9FF" stop-opacity=".16"/><stop offset=".7" stop-color="#F9A8D4" stop-opacity=".18"/><stop offset="1" stop-color="#A78BFA" stop-opacity="0"/></linearGradient>
+    <radialGradient id="horizon"><stop stop-color="#F9A8D4" stop-opacity=".22"/><stop offset="1" stop-color="#F9A8D4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ridge" x2="0" y2="1"><stop stop-color="#77729C"/><stop offset="1" stop-color="#303052"/></linearGradient>
+    <g id="blossom" fill="#D99BC9"><ellipse cy="-3" rx="2.5" ry="3.5"/><ellipse cx="3" cy="-1" rx="3.5" ry="2.5" transform="rotate(-25 3 -1)"/><ellipse cx="2" cy="3" rx="2.5" ry="3.5" transform="rotate(-30 2 3)"/><ellipse cx="-2" cy="3" rx="2.5" ry="3.5" transform="rotate(30 -2 3)"/><ellipse cx="-3" cy="-1" rx="3.5" ry="2.5"/><circle r="1.2" fill="#FFE0EC"/></g>
+    <clipPath id="frame"><rect width="1200" height="420" rx="20"/></clipPath>
+    <path id="spark" d="M0-4 1-1 4 0 1 1 0 4-1 1-4 0-1-1Z"/>
+    <g id="windows" fill="#F9D3B3"><path d="M0 0h3v5H0zM12 0h3v5h-3zM0 13h3v5H0zM24 13h3v5h-3zM12 26h3v5h-3zM24 39h3v5h-3z"/></g>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: Consolas, 'Courier New', monospace; }
+      @media (prefers-reduced-motion: reduce) {
+        .drift, .float, .meteor { transform: none !important; }
+        .twinkle { opacity: .65 !important; }
+        .moon-halo { opacity: .8 !important; }
+        .meteor, .role { opacity: 0 !important; }
+        .role-first, .cursor { opacity: 1 !important; }
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="url(#sky)"/>
+    <ellipse cx="950" cy="290" rx="480" ry="290" fill="url(#atmosphere)"/>
+    <!-- Broad, translucent celestial brushstrokes sweep behind the moon. -->
+    <path d="M430 326C621 178 686 42 939-28h230C874 81 729 192 430 326Z" fill="url(#nebula)"/>
+    <path d="M504 286C688 144 772 37 1004-24h86C868 69 728 184 504 286Z" fill="url(#nebula)" opacity=".65"/>
+    <path d="M593 231C738 128 805 50 980 3" fill="none" stroke="#B9C5FF" stroke-opacity=".07" stroke-width="16" filter="url(#soft)"/>
+    <ellipse cx="967" cy="264" rx="344" ry="112" fill="url(#horizon)"/>
+    <g fill="#DDE7FF" opacity=".5">
+      <path d="M610 192h1v1h-1zM642 166h1v1h-1zM666 183h1v1h-1zM675 144h1v1h-1zM692 156h1v1h-1zM712 120h1v1h-1zM730 137h1v1h-1zM745 103h1v1h-1zM761 119h1v1h-1zM778 78h1v1h-1zM801 61h1v1h-1zM817 76h1v1h-1zM838 44h1v1h-1zM864 57h1v1h-1zM883 25h1v1h-1zM906 41h1v1h-1zM933 17h1v1h-1zM956 30h1v1h-1zM991 12h1v1h-1z"/>
+      <circle cx="698" cy="174" r=".7"/><circle cx="755" cy="87" r=".9"/><circle cx="790" cy="113" r=".6"/><circle cx="855" cy="80" r=".8"/><circle cx="891" cy="12" r=".7"/><circle cx="924" cy="59" r=".6"/>
+    </g>
+    <!-- Sparse constellations leave quiet space for the introduction. -->
+    <g fill="#DDE7FF" opacity=".48">
+      <circle cx="70" cy="54" r="1"/><circle cx="206" cy="92" r=".8"/><circle cx="328" cy="44" r="1"/><circle cx="465" cy="73" r=".8"/><circle cx="595" cy="36" r="1"/><circle cx="650" cy="123" r="1.2"/><circle cx="728" cy="63" r="1"/><circle cx="783" cy="140" r=".8"/><circle cx="854" cy="31" r="1"/><circle cx="1090" cy="43" r="1"/><circle cx="1145" cy="121" r="1.2"/><circle cx="1030" cy="183" r=".8"/><circle cx="713" cy="208" r=".8"/><circle cx="1110" cy="226" r="1"/><circle cx="568" cy="107" r=".7"/>
+    </g>
+    <g class="twinkle" fill="#DDE7FF" opacity=".65">
+      <use href="#spark" x="685" y="44"/><use href="#spark" x="819" y="98"/><use href="#spark" x="1124" y="77"/>
+      <animate attributeName="opacity" values=".35;.85;.35" dur="6s" repeatCount="indefinite"/>
+    </g>
+    <g class="twinkle" fill="#A78BFA" opacity=".6">
+      <use href="#spark" x="546" y="58"/><use href="#spark" x="748" y="173"/><use href="#spark" x="1169" y="185"/>
+      <animate attributeName="opacity" values=".7;.25;.7" dur="8s" repeatCount="indefinite"/>
+    </g>
+    <circle class="moon-halo" cx="972" cy="106" r="150" fill="url(#halo)">
+      <animate attributeName="opacity" values=".65;1;.65" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="972" cy="106" r="46" fill="url(#moon)"/>
+    <g fill="#8F9FCB" opacity=".13"><ellipse cx="988" cy="90" rx="12" ry="18"/><ellipse cx="953" cy="123" rx="13" ry="8"/><circle cx="979" cy="134" r="5"/><circle cx="946" cy="94" r="6"/></g>
+    <circle cx="972" cy="106" r="46" fill="none" stroke="#F8FAFC" stroke-opacity=".4"/>
+    <g class="meteor" opacity="0">
+      <path d="M730 43 838 82" stroke="url(#trail)" stroke-width="1.5" stroke-linecap="round"/><circle cx="838" cy="82" r="1.5" fill="#F8FAFC"/>
+      <animate attributeName="opacity" values="0;0;.85;0;0" keyTimes="0;.73;.76;.81;1" dur="18s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 0;148 54;148 54" keyTimes="0;.73;.81;1" dur="18s" repeatCount="indefinite"/>
+    </g>
+    <g class="drift" fill="url(#cloud)">
+      <path d="M722 155c31-12 53-9 73-11 20-24 61-24 87-5 19-8 40-5 55 4 44-6 82 2 122 16-91 5-235 10-337-4Z"/>
+      <path d="M1010 190c20-10 44-12 64-9 25-20 57-17 77-3 27-7 55-1 87 12-59 10-165 10-228 0Z"/>
+      <animateTransform attributeName="transform" type="translate" values="-12 0;16 0;-12 0" dur="40s" repeatCount="indefinite"/>
+    </g>
+    <g class="drift" fill="url(#cloud)" opacity=".6">
+      <path d="M557 92c25-11 41-9 59-8 22-19 43-15 66-3 30-7 63 0 89 13-73 4-140 5-214-2Z"/>
+      <animateTransform attributeName="transform" type="translate" values="10 0;-15 0;10 0" dur="51s" repeatCount="indefinite"/>
+    </g>
+    <!-- Layered hills, distant apartments and warm windows. -->
+    <path d="m569 285 91-42 30 6 111-102 28 26 17 5 78 78 64-29 34 8 66-47 112 94v65H569Z" fill="url(#ridge)" opacity=".58"/>
+    <path d="m748 197 53-50 28 26 17 5 25 25-32-15-11 2-13-18-14 10-10-6-15 17-13-1Z" fill="#C9C4E7" opacity=".34"/>
+    <path d="m635 263 64-8 53-27 47 7 65-9 49 20 81-2 69-20 137 22v43H635Z" fill="#8881B2" opacity=".13"/>
+    <path d="M410 310 530 281 591 292 694 248 766 265 848 238 932 262 1034 230 1122 253 1200 237V420H410Z" fill="#25264B"/>
+    <path d="M520 324 660 289 739 307 836 277 949 300 1090 272 1200 283V420H520Z" fill="#1A203D"/>
+    <path d="M594 358v-37h32v-29h39v66h17v-48h34v-39h46v87h21v-49h45v-19h25v68h28v-38h41v-46h39v84h18v-49h48v49h21v-66h30v-25h28v91h18v-40h41v-30h44v70h21v-49h46v111H594Z" fill="#141C34"/>
+    <g opacity=".35"><use href="#windows" x="638" y="306"/><use href="#windows" x="725" y="287"/><use href="#windows" x="795" y="321"/><use href="#windows" x="891" y="290"/><use href="#windows" x="1038" y="284"/><use href="#windows" x="1121" y="304"/></g>
+    <path d="M634 363 680 344 723 359h45l46-23 48 23h48l33-18 45 22h212v57H634Z" fill="#101729"/>
+    <path d="M666 345 680 339 727 357M798 341l16-10 50 25" fill="none" stroke="#505078" stroke-opacity=".5" stroke-width="2"/>
+    <!-- The near rooftop: a quiet place to build something. -->
+    <path d="M776 354H1200V420H753Z" fill="#0B1020"/>
+    <path d="M772 352H1200V361H768Z" fill="#30324D"/>
+    <path d="M775 352H1200" stroke="#A78BFA" stroke-opacity=".38"/>
+    <g stroke="#29263E" stroke-width="1" opacity=".65"><path d="M786 378h414M774 402h426M835 361l-12 59M1037 361l17 59M1151 361l30 59"/></g>
+    <g stroke="#3E405C" stroke-width="2"><path d="M1080 352v-91m70 91v-91m49 91v-91M1065 270h135M1065 292h135"/></g>
+    <path d="M1142 262v-53m-17 13h35m-29 10h23" stroke="#191D35" stroke-width="2"/>
+    <ellipse cx="962" cy="319" rx="85" ry="65" fill="url(#screenGlow)"/>
+    <!-- Original seated figure, backlit hair, loose jacket and folded legs. -->
+    <path d="M910 266c-8-3-15-13-12-24 1-9 11-15 22-12 10 3 13 13 9 23l-5 10 2 12-15 4Z" fill="#0B1020"/>
+    <path d="m899 246-5-6 7-1-1-7 8 1 5-7 5 5 8-1 4 7 5 4-6 7-5-9-12-1Z" fill="#0B1020"/>
+    <path d="M910 270c-17 3-23 27-23 52l13 13 35-7-3-32-6-24Z" fill="#10182B"/>
+    <path d="M912 273c-10 8-15 22-15 42m24-42 7 19 19 16" fill="none" stroke="#6A719A" stroke-opacity=".5" stroke-width="2"/>
+    <path d="m925 288 19 20 23 6-3 7-31-9-17-16" fill="#171F35"/>
+    <path d="M899 323c9 0 24-1 34 2l28 16 19 3-1 8h-27l-33-15-16 1Z" fill="#0B1020"/>
+    <path d="m909 334 22 11-7 34-10 13-8-4 10-17 1-21-22-13Z" fill="#0B1020"/>
+    <path d="m914 391-9-4-6 7 1 4h18l1-5Z" fill="#080D1A"/>
+    <path d="m925 238 4 7-2 10" fill="none" stroke="#A7B6DE" stroke-opacity=".4"/>
+    <!-- Laptop rests on the raised knee, its screen turned toward the figure. -->
+    <path d="m955 320 11-30 38 2-11 29Z" fill="#263D5B" stroke="#8AB9F0" stroke-width="1.2"/>
+    <path d="m960 316 8-22 31 1-8 22Z" fill="#60A5FA" fill-opacity=".22"/>
+    <path d="m948 322 45-1 8 4h-47Z" fill="#8CA7C9"/>
+    <path d="m976 301-4 3 2 3m12-6 2 3-4 3m-3-7-4 9" fill="none" stroke="#DDE7FF" stroke-width="1.2"/>
+    <g class="float" fill="#F9A8D4" opacity=".65">
+      <ellipse cx="837" cy="296" rx="2.4" ry="1.2" transform="rotate(-30 837 296)"/><ellipse cx="1056" cy="238" rx="2" ry="1"/><circle cx="1022" cy="330" r="1.3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;5 -9;0 0" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <rect width="730" height="420" fill="url(#shade)"/>
+    <!-- Foreground sakura branches frame the sky without crossing the text. -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M1216 10c-61 12-95 44-147 50-35 4-64-9-92-18" stroke="#14162D" stroke-width="11"/>
+      <path d="M1177 26c-23 35-30 64-69 84m24-65c-16-17-39-22-68-23m17 37c-15 18-32 25-53 27m130-49 3 36" stroke="#1C1B35" stroke-width="5"/>
+      <path d="m1103 29-15-20m-30 62-14-4m88 25 19 5m-136-46-6-16" stroke="#29213F" stroke-width="2"/>
+    </g>
+    <g opacity=".8">
+      <use href="#blossom" x="1008" y="38"/><use href="#blossom" x="1024" y="51"/><use href="#blossom" x="1044" y="65"/><use href="#blossom" x="1028" y="85"/>
+      <use href="#blossom" x="1066" y="23"/><use href="#blossom" x="1087" y="10"/><use href="#blossom" x="1102" y="29"/><use href="#blossom" x="1113" y="55"/><use href="#blossom" x="1147" y="43"/>
+      <use href="#blossom" x="1161" y="73"/><use href="#blossom" x="1134" y="89"/><use href="#blossom" x="1108" y="109"/><use href="#blossom" x="1151" y="98"/><use href="#blossom" x="1189" y="23"/>
+    </g>
+    <g class="float" fill="#F9A8D4" opacity=".65">
+      <path d="M1080 151q9-5 7 2-5 5-7-2ZM1161 201q8-6 8 1-4 6-8-1ZM822 219q7-4 6 2-5 3-6-2Z"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-14 14;0 0" dur="18s" repeatCount="indefinite"/>
+    </g>
+    <!-- Base values show the first role even when SMIL is unavailable. -->
+    <g transform="translate(64 0)">
+      <path d="M0 112h25" stroke="#A78BFA" stroke-width="2"/>
+      <text x="36" y="117" fill="#B8B5D8" font-size="12" letter-spacing="3">CODE UNDER THE STARS</text>
+      <text x="0" y="181" fill="#F8FAFC" font-size="39" font-weight="650" letter-spacing="-1.1">Hi, I'm Chamod Ekanayaka</text>
+      <text x="0" y="232" class="mono" fill="#A78BFA" font-size="22">&gt;</text>
+      <g fill="#DDE7FF" font-size="23">
+        <text x="29" y="232" class="role role-first" opacity="1">Software Engineer<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.16;.2;.96;1" dur="25s" repeatCount="indefinite"/></text>
+        <text x="29" y="232" class="role" opacity="0">Full Stack Developer<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.16;.2;.36;.4;1" dur="25s" repeatCount="indefinite"/></text>
+        <text x="29" y="232" class="role" opacity="0">AI &amp; Machine Learning Enthusiast<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.36;.4;.56;.6;1" dur="25s" repeatCount="indefinite"/></text>
+        <text x="29" y="232" class="role" opacity="0">Passionate Coder<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.56;.6;.76;.8;1" dur="25s" repeatCount="indefinite"/></text>
+        <text x="29" y="232" class="role" opacity="0">Turning Ideas into Reality<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.76;.8;.96;1" dur="25s" repeatCount="indefinite"/></text>
+      </g>
+      <path class="cursor" d="M439 216v20" stroke="#F9A8D4" stroke-width="2" opacity="1"><animate attributeName="opacity" values="1;0;1" keyTimes="0;.5;1" calcMode="discrete" dur="1.6s" repeatCount="indefinite"/></path>
+      <path d="M0 269h46" stroke="#68658D"/>
+      <text x="0" y="302" fill="#A5ADC6" font-size="14" letter-spacing=".5">Quiet nights. Curious mind. Endless possibilities.</text>
+      <text x="0" y="373" class="mono" fill="#777F9D" font-size="11" letter-spacing="1.5">&lt;/&gt;  DREAM / BUILD / REPEAT</text>
+    </g>
+    <rect x=".5" y=".5" width="1199" height="419" rx="20" fill="none" stroke="#A78BFA" stroke-opacity=".16"/>
+  </g>
+</svg>
