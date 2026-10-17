@@ -16,7 +16,7 @@
 <path d="M648 117h64" stroke="#B794F4" stroke-opacity=".6"/>
 <text x="648" y="152" font-size="21" fill="#F8FAFC" font-weight="600" text-anchor="start">Language Explorer</text>
 <text x="48" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Commits / 2026</text>
-<text x="48" y="230" font-size="34" fill="#B794F4" font-weight="650" text-anchor="start">1,211</text>
+<text x="48" y="230" font-size="34" fill="#B794F4" font-weight="650" text-anchor="start">1,213</text>
 <text x="48" y="251" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Public default branches</text>
 <text x="306" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Pull requests</text>
 <text x="306" y="230" font-size="34" fill="#60A5FA" font-weight="650" text-anchor="start">177</text>
@@ -30,27 +30,27 @@
 <path d="M300 178v176" stroke="#2A2358"/>
 <clipPath id="bar"><rect x="648" y="184" width="504" height="16" rx="8"/></clipPath>
 <rect x="648" y="184" width="504" height="16" rx="8" fill="#292542"/>
-<rect x="648.00000" y="184" width="323.48449" height="16" fill="#B794F4" clip-path="url(#bar)"/>
+<rect x="648.00000" y="184" width="323.47839" height="16" fill="#B794F4" clip-path="url(#bar)"/>
 <circle cx="652" cy="225" r="4" fill="#B794F4"/>
 <text x="664" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">TypeScript</text>
 <text x="883" y="230" font-size="15" fill="#B794F4" font-weight="600" text-anchor="end">64.2%</text>
-<rect x="971.48449" y="184" width="54.06525" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
+<rect x="971.47839" y="184" width="54.06423" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
 <circle cx="910" cy="225" r="4" fill="#60A5FA"/>
 <text x="922" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">C#</text>
 <text x="1141" y="230" font-size="15" fill="#60A5FA" font-weight="600" text-anchor="end">10.7%</text>
-<rect x="1025.54973" y="184" width="49.02378" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
+<rect x="1025.54262" y="184" width="49.02285" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
 <circle cx="652" cy="259" r="4" fill="#EC6CB9"/>
 <text x="664" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">CSS</text>
 <text x="883" y="264" font-size="15" fill="#EC6CB9" font-weight="600" text-anchor="end">9.7%</text>
-<rect x="1074.57351" y="184" width="32.40338" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
+<rect x="1074.56547" y="184" width="32.40277" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
 <circle cx="910" cy="259" r="4" fill="#82D8CF"/>
 <text x="922" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Java</text>
 <text x="1141" y="264" font-size="15" fill="#82D8CF" font-weight="600" text-anchor="end">6.4%</text>
-<rect x="1106.97688" y="184" width="24.22477" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
+<rect x="1106.96824" y="184" width="24.23381" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
 <circle cx="652" cy="293" r="4" fill="#E8C58F"/>
 <text x="664" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Python</text>
 <text x="883" y="298" font-size="15" fill="#E8C58F" font-weight="600" text-anchor="end">4.8%</text>
-<rect x="1131.20165" y="184" width="20.79835" height="16" fill="#9399BD" clip-path="url(#bar)"/>
+<rect x="1131.20205" y="184" width="20.79795" height="16" fill="#9399BD" clip-path="url(#bar)"/>
 <circle cx="910" cy="293" r="4" fill="#9399BD"/>
 <text x="922" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Other languages</text>
 <text x="1141" y="298" font-size="15" fill="#9399BD" font-weight="600" text-anchor="end">4.1%</text>
