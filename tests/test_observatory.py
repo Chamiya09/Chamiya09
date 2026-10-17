@@ -105,7 +105,7 @@ class ObservatoryTests(unittest.TestCase):
         readme.write_bytes(('Banner and introduction\r\n\r\n' + obs.START + '\r\nold block\r\n' + obs.END + '\r\n\r\nKeep my tech stack.\r\n').encode())
         return readme
 
-    def test_markdown_escape_and_no_timestamp_only_changes(self):
+    def test_image_only_readme_and_no_timestamp_only_changes(self):
         data = obs.collect(FakeGitHub(), 'example', NOW)
         data['language_bytes'] = {'A&B <language>|*test*': 20}
         with tempfile.TemporaryDirectory() as folder:
@@ -115,8 +115,10 @@ class ObservatoryTests(unittest.TestCase):
             self.assertFalse(obs.publish(data, readme, NOW + timedelta(hours=6)))
             self.assertEqual(before, readme.read_bytes())
             content = before.decode()
-            self.assertIn('A&amp;B &lt;language&gt;&#124;', content)
-            self.assertIn('**1,201**', content)
+            self.assertIn('<!-- observatory-data:', content)
+            self.assertIn('github-observatory.svg', content)
+            self.assertNotIn('<details>', content)
+            self.assertNotIn('View statistics as text', content)
             self.assertNotIn('<svg', content)
             self.assertTrue(content.startswith('Banner and introduction\r\n\r\n' + obs.START))
             self.assertTrue(content.endswith(obs.END + '\r\n\r\nKeep my tech stack.\r\n'))
@@ -148,8 +150,8 @@ class ObservatoryTests(unittest.TestCase):
             data['metrics']['stars'] = 42
             self.assertTrue(obs.publish(data, readme, NOW + timedelta(hours=6)))
             content = readme.read_text(encoding='utf-8')
-            self.assertIn('| Stars received | **42** |', content)
-            self.assertIn('2026-06-04 18:00:00 UTC', content)
+            self.assertIn('"stars": 42', content)
+            self.assertIn('2026\\u002d06\\u002d04T18:00:00Z', content)
 
 
 if __name__ == '__main__':

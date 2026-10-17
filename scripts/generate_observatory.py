@@ -8,7 +8,6 @@ import argparse
 from collections import Counter
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
-from html import escape
 import json
 import os
 from pathlib import Path
@@ -183,14 +182,6 @@ def language_segments(language_bytes):
     return [(name, size / total * 100) for name, size in ranked]
 
 
-def markdown_escape(value):
-    """Protect table cells from markup, pipes and line breaks in API text."""
-    value = escape(str(value), quote=False).replace("\n", " ").replace("\r", " ")
-    for char in ("\\", "`", "*", "_", "[", "]"):
-        value = value.replace(char, "\\" + char)
-    return value.replace("|", "&#124;")
-
-
 def snapshot_languages(snapshot):
     # A restored display-only snapshot retains its verified rounded percentages.
     # Fresh API collections always use the full language-byte measurements.
@@ -198,41 +189,12 @@ def snapshot_languages(snapshot):
 
 
 def render(snapshot):
-    metrics = snapshot['metrics']
-    username = markdown_escape(snapshot['username'])
-    stamp = snapshot['updated_at'].replace('T', ' ').replace('Z', ' UTC')
-    lines = [
-        '## \u2726 GitHub Observatory', '',
-        '**\u2726 LIVE DEVELOPER ACTIVITY \u2726**', '',
-        f'Public GitHub snapshot for **@{username}** — refreshed every 6 hours.', '',
-        '### GitHub Statistics', '',
-        '| Metric | Total | Scope |',
-        '| :--- | ---: | :--- |',
-        f"| Commits · {snapshot['year']} | **{metrics['commits']:,}** | Public default branches, current UTC year |",
-        f"| Pull requests | **{metrics['pull_requests']:,}** | Authored public PRs · all time, all states |",
-        f"| Stars received | **{metrics['stars']:,}** | Owned public repositories |",
-        f"| Public repositories | **{metrics['public_repositories']:,}** | Owned repositories, including forks |",
-        '', '### Language Explorer', '',
-    ]
-    segments = snapshot_languages(snapshot)
-    if segments:
-        lines += ['| Language | Share | Distribution |', '| :--- | ---: | :--- |']
-        for name, percent in segments:
-            filled = round(percent / 100 * 20)
-            bar = '\u2588' * filled + '\u2591' * (20 - filled)
-            percentage = '&lt;0.1%' if percent < .05 else f'{percent:.1f}%'
-            lines.append(f'| {markdown_escape(name)} | **{percentage}** | `{bar}` |')
-    else:
-        lines.append('No language bytes reported by GitHub.')
-    forks = 'Forks included' if snapshot['include_forks'] else 'Forks excluded'
-    lines += ['', f'> {forks}. Shares measure code bytes, not time or expertise. Bars are rounded to 5% steps.',
-              '', f'*Last published snapshot: {stamp}*', '']
     # Keep audit data in the same atomically updated file, invisible when rendered.
     metadata = json.dumps(snapshot, sort_keys=True, ensure_ascii=True)
     metadata = metadata.replace('<', r'\u003c').replace('>', r'\u003e').replace('-', r'\u002d')
-    lines.append('<!-- observatory-data: ' + metadata + ' -->')
+    audit = '<!-- observatory-data: ' + metadata + ' -->'
     picture = '<picture>\n  <source media="(max-width: 600px)" srcset="assets/github-observatory-mobile.svg" />\n  <img src="assets/github-observatory.svg" alt="GitHub Observatory statistics and language distribution" width="100%" />\n</picture>'
-    return picture + '\n\n<details>\n<summary>View statistics as text</summary>\n\n' + '\n'.join(lines) + '\n\n</details>'
+    return picture + '\n\n' + audit
 
 
 def publish(snapshot, readme, now):
