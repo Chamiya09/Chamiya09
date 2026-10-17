@@ -1,5 +1,7 @@
 ![Anime Night Banner](assets/anime-night-banner.svg)
 
+<img src="assets/tech-stack.svg" alt="Languages and tech stack: TypeScript, JavaScript, Python, Java, C#, Dart, HTML5, CSS3, PostgreSQL, Docker, Git and GitHub" width="100%" />
+
 <!-- observatory:start -->
 
 <picture>
