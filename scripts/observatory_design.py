@@ -6,7 +6,7 @@ COLORS = ['#B794F4', '#60A5FA', '#EC6CB9', '#82D8CF', '#E8C58F', '#9399BD']
 
 
 def render_cards(snapshot, languages, mobile=False):
-    width, height = (600, 770) if mobile else (1200, 430)
+    width, height = (600, 688) if mobile else (1200, 404)
     sx, sy = (24, 116) if mobile else (24, 116)
     lx, ly = (24, 400) if mobile else (624, 116)
 
@@ -56,11 +56,6 @@ def render_cards(snapshot, languages, mobile=False):
         parts.append(text(x,y+60,'No language bytes reported by GitHub.',16,'#A7B4CE'))
     forks='Forks included' if snapshot['include_forks'] else 'Forks excluded'
     parts += [text(x,ly+220,forks+' / owned public repositories',13,'#A7B4CE'),text(x,ly+244,'Share of code bytes, not time or expertise.',13,'#A7B4CE')]
-    stamp=snapshot['updated_at'].replace('T',' ').replace('Z',' UTC')
-    if mobile:
-        parts += [text(300,704,'Refresh every 6h / GitHub API',14,'#A7B4CE',anchor='middle'),text(300,733,'Last snapshot: '+stamp,12,'#A7B4CE',anchor='middle')]
-    else:
-        parts += [text(26,411,'Refresh every 6h / GitHub API',13,'#A7B4CE'),text(1174,411,'Last snapshot: '+stamp,13,'#A7B4CE',anchor='end')]
     parts.append('</svg>')
     svg='\n'.join(parts)+'\n'
     ET.fromstring(svg)
