@@ -56,9 +56,4 @@
 <text x="541" y="582" font-size="15" fill="#9399BD" font-weight="600" text-anchor="end">4.1%</text>
 <text x="48" y="620" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Forks excluded / owned public repositories</text>
 <text x="48" y="644" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Share of code bytes, not time or expertise.</text>
-<<<<<<< HEAD
-=======
-<text x="300" y="704" font-size="14" fill="#A7B4CE" font-weight="400" text-anchor="middle">Refresh every 6h / GitHub API</text>
-<text x="300" y="733" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="middle">Last snapshot: 2026-10-17 18:28:43 UTC</text>
->>>>>>> 16fe718bab68731452df81b95914851b3de005ce
 </svg>

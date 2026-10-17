@@ -1,0 +1,24 @@
+# Python bytecode and test caches
+*__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local virtual environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -3,6 +3,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from unittest.mock import patch
 from urllib.error import HTTPError
 
@@ -44,6 +45,8 @@ class ObservatoryTests(unittest.TestCase):
         for name in ('github-observatory.svg', 'github-observatory-mobile.svg'):
             self.assertIn(name, readme)
             self.assertTrue((obs.ROOT / 'assets' / name).is_file())
+            root = ET.parse(obs.ROOT / 'assets' / name).getroot()
+            self.assertEqual(root.tag, '{http://www.w3.org/2000/svg}svg')
 
     def test_pagination_real_totals_and_fork_exclusion(self):
         client = FakeGitHub()
