@@ -16,7 +16,7 @@
 <path d="M48 401h64" stroke="#B794F4" stroke-opacity=".6"/>
 <text x="48" y="436" font-size="21" fill="#F8FAFC" font-weight="600" text-anchor="start">Language Explorer</text>
 <text x="48" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Commits / 2026</text>
-<text x="48" y="230" font-size="34" fill="#B794F4" font-weight="650" text-anchor="start">1,209</text>
+<text x="48" y="230" font-size="34" fill="#B794F4" font-weight="650" text-anchor="start">1,211</text>
 <text x="48" y="251" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="start">Public default branches</text>
 <text x="306" y="193" font-size="16" fill="#B8C0D8" font-weight="400" text-anchor="start">Pull requests</text>
 <text x="306" y="230" font-size="34" fill="#60A5FA" font-weight="650" text-anchor="start">177</text>
@@ -30,35 +30,30 @@
 <path d="M300 178v176" stroke="#2A2358"/>
 <clipPath id="bar"><rect x="48" y="468" width="504" height="16" rx="8"/></clipPath>
 <rect x="48" y="468" width="504" height="16" rx="8" fill="#292542"/>
-<rect x="48.00000" y="468" width="323.47063" height="16" fill="#B794F4" clip-path="url(#bar)"/>
+<rect x="48.00000" y="468" width="323.48449" height="16" fill="#B794F4" clip-path="url(#bar)"/>
 <circle cx="52" cy="509" r="4" fill="#B794F4"/>
 <text x="64" y="514" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">TypeScript</text>
 <text x="283" y="514" font-size="15" fill="#B794F4" font-weight="600" text-anchor="end">64.2%</text>
-<rect x="371.47063" y="468" width="54.06293" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
+<rect x="371.48449" y="468" width="54.06525" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
 <circle cx="310" cy="509" r="4" fill="#60A5FA"/>
 <text x="322" y="514" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">C#</text>
 <text x="541" y="514" font-size="15" fill="#60A5FA" font-weight="600" text-anchor="end">10.7%</text>
-<rect x="425.53355" y="468" width="49.02168" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
+<rect x="425.54973" y="468" width="49.02378" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
 <circle cx="52" cy="543" r="4" fill="#EC6CB9"/>
 <text x="64" y="548" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">CSS</text>
 <text x="283" y="548" font-size="15" fill="#EC6CB9" font-weight="600" text-anchor="end">9.7%</text>
-<rect x="474.55523" y="468" width="32.40199" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
+<rect x="474.57351" y="468" width="32.40338" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
 <circle cx="310" cy="543" r="4" fill="#82D8CF"/>
 <text x="322" y="548" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Java</text>
 <text x="541" y="548" font-size="15" fill="#82D8CF" font-weight="600" text-anchor="end">6.4%</text>
-<rect x="506.95722" y="468" width="24.24533" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
+<rect x="506.97688" y="468" width="24.22477" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
 <circle cx="52" cy="577" r="4" fill="#E8C58F"/>
 <text x="64" y="582" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Python</text>
 <text x="283" y="582" font-size="15" fill="#E8C58F" font-weight="600" text-anchor="end">4.8%</text>
-<rect x="531.20255" y="468" width="20.79745" height="16" fill="#9399BD" clip-path="url(#bar)"/>
+<rect x="531.20165" y="468" width="20.79835" height="16" fill="#9399BD" clip-path="url(#bar)"/>
 <circle cx="310" cy="577" r="4" fill="#9399BD"/>
 <text x="322" y="582" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Other languages</text>
 <text x="541" y="582" font-size="15" fill="#9399BD" font-weight="600" text-anchor="end">4.1%</text>
 <text x="48" y="620" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Forks excluded / owned public repositories</text>
 <text x="48" y="644" font-size="13" fill="#A7B4CE" font-weight="400" text-anchor="start">Share of code bytes, not time or expertise.</text>
-<<<<<<< HEAD
-=======
-<text x="300" y="704" font-size="14" fill="#A7B4CE" font-weight="400" text-anchor="middle">Refresh every 6h / GitHub API</text>
-<text x="300" y="733" font-size="12" fill="#A7B4CE" font-weight="400" text-anchor="middle">Last snapshot: 2026-10-17 18:28:43 UTC</text>
->>>>>>> 16fe718bab68731452df81b95914851b3de005ce
 </svg>
