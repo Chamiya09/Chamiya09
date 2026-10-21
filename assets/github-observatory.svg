@@ -30,27 +30,27 @@
 <path d="M300 178v176" stroke="#2A2358"/>
 <clipPath id="bar"><rect x="648" y="184" width="504" height="16" rx="8"/></clipPath>
 <rect x="648" y="184" width="504" height="16" rx="8" fill="#292542"/>
-<rect x="648.00000" y="184" width="323.37105" height="16" fill="#B794F4" clip-path="url(#bar)"/>
+<rect x="648.00000" y="184" width="321.33959" height="16" fill="#B794F4" clip-path="url(#bar)"/>
 <circle cx="652" cy="225" r="4" fill="#B794F4"/>
 <text x="664" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">TypeScript</text>
-<text x="883" y="230" font-size="15" fill="#B794F4" font-weight="600" text-anchor="end">64.2%</text>
-<rect x="971.37105" y="184" width="54.04629" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
+<text x="883" y="230" font-size="15" fill="#B794F4" font-weight="600" text-anchor="end">63.8%</text>
+<rect x="969.33959" y="184" width="53.70676" height="16" fill="#60A5FA" clip-path="url(#bar)"/>
 <circle cx="910" cy="225" r="4" fill="#60A5FA"/>
 <text x="922" y="230" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">C#</text>
 <text x="1141" y="230" font-size="15" fill="#60A5FA" font-weight="600" text-anchor="end">10.7%</text>
-<rect x="1025.41734" y="184" width="49.00658" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
+<rect x="1023.04635" y="184" width="48.69872" height="16" fill="#EC6CB9" clip-path="url(#bar)"/>
 <circle cx="652" cy="259" r="4" fill="#EC6CB9"/>
 <text x="664" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">CSS</text>
 <text x="883" y="264" font-size="15" fill="#EC6CB9" font-weight="600" text-anchor="end">9.7%</text>
-<rect x="1074.42392" y="184" width="32.39201" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
+<rect x="1071.74507" y="184" width="32.18852" height="16" fill="#82D8CF" clip-path="url(#bar)"/>
 <circle cx="910" cy="259" r="4" fill="#82D8CF"/>
 <text x="922" y="264" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Java</text>
 <text x="1141" y="264" font-size="15" fill="#82D8CF" font-weight="600" text-anchor="end">6.4%</text>
-<rect x="1106.81594" y="184" width="24.39301" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
+<rect x="1103.93359" y="184" width="27.40597" height="16" fill="#E8C58F" clip-path="url(#bar)"/>
 <circle cx="652" cy="293" r="4" fill="#E8C58F"/>
 <text x="664" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Python</text>
-<text x="883" y="298" font-size="15" fill="#E8C58F" font-weight="600" text-anchor="end">4.8%</text>
-<rect x="1131.20895" y="184" width="20.79105" height="16" fill="#9399BD" clip-path="url(#bar)"/>
+<text x="883" y="298" font-size="15" fill="#E8C58F" font-weight="600" text-anchor="end">5.4%</text>
+<rect x="1131.33956" y="184" width="20.66044" height="16" fill="#9399BD" clip-path="url(#bar)"/>
 <circle cx="910" cy="293" r="4" fill="#9399BD"/>
 <text x="922" y="298" font-size="15" fill="#F8FAFC" font-weight="400" text-anchor="start">Other languages</text>
 <text x="1141" y="298" font-size="15" fill="#9399BD" font-weight="600" text-anchor="end">4.1%</text>
